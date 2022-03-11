@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"><!--Asignando Bootstrap-->
+    <link href="estilos.css" rel="stylesheet"><!--stylo css-->
+    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet"><!--estilo de titulo-->
+    <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <title>Travel world</title>
+</head>
+<!--comienzo del body-->
+<body>
+
+    <!--comienzo del header-->
+    <header>
+      
+      <nav class="navbar navbar-light bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="#">Travel World</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Travel World</h5>
+              <br>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Destinos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Hoteles</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Ofertas</a>
+                </li>
+                <hr>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+    <!--final del header-->
+    <!--Comienzo del main-->
+    <main>
+      <div class="card">
+        <img src="/TravelWorld-Alanjaime/img/barcelona.jpg" alt="Barcelona" style="width:20%">
+        <div class="container">
+          <h4><b>John Doe</b></h4>
+          <p>Architect & Engineer</p>
+        </div>
+      </div>  
+   
+
+    
+
+    </main>
+    <!--final del main-->
+    <!--Comienzo del footer-->
+    <!--<footer>
+      <section id="footer">
+        
+          <div class="row text-center text-xs-center text-sm-left text-md-left text-light bg-dark mw-100">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-l-3 col-xl-3 col-xxl-3 p-3 ">
+              <h5>Productos</h5>
+              <br>
+              <ul class="list-unstyled quick-links">
+                <li><a href="#" class="text-decoration-none text-secondary">Destinos</a></li>
+                <li><a href="#" class="text-decoration-none text-secondary">Hoteles</a></li>
+                <li><a href="#" class="text-decoration-none text-secondary">Paquetes</a></li>
+                <li><a href="#" class="text-decoration-none text-secondary">Ofertas</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-l-3 col-xl-3 col-xxl-3 p-3">
+              <h5>Nosotros</h5>
+              <br>
+              <ul class="list-unstyled quick-links">
+                <li><a href="#" class="text-decoration-none text-secondary">¿Quienes Somos?</a></li>
+                <li><a href="https://goo.gl/maps/SGxYZS8WstGoUvkN7"class="text-decoration-none text-secondary">ubicacion</a></li>
+                <li><a href="#" class="text-decoration-none text-secondary">Telefono: 11-34481610</a></li>
+                <li><a href="#" class="text-decoration-none text-secondary">Horarios: lunes a viernes de 9 a 20hs</a></li>   
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-l-3 col-xl-3 col-xxl-3 p-3">
+              <h5>Nuestras Redes</h5>
+              <br>
+              <ul class="list-unstyled list-inline social text-center ">
+                <li class="list-inline-item "><button class="btn btn-outline-primary">
+                    <a class="fab fa-facebook-square" href="https://es-la.facebook.com/"></a>
+                </button></li>
+                <li class="list-inline-item"><button class="btn btn-outline-danger">
+                    <a class="fab fa-instagram-square" href="https://www.instagram.com/?hl=es"></a>
+                </button></li>
+                <li class="list-inline-item"><button class="btn btn-outline-primary">
+                    <a class="fab fa-twitter" href="https://twitter.com/?lang=es"></a>
+                </button></li>
+                <li class="list-inline-item"><button class="btn btn-outline-danger">
+                    <a class="fab fa-youtube" href="https://www.youtube.com/"></a>
+                </button></li>              
+                
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-l-3 col-xl-3 col-xxl-3  p-3">        
+              <h5>Comentarios</h5>
+              <br>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@informaticagaming">escribinos @travelworld</button>
+              
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title text-dark" id="exampleModalLabel">Nuevo Mensaje</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="recipient-name" class="col-form-label text-secondary">Destinatario:</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                          <label for="message-text" class="col-form-label text-secondary">Mensaje:</label>
+                          <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-primary">Enviar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row text-center text-xs-center text-sm-left text-md-left text-light bg-dark mw-100">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-l-12 col-xl-12 col-xxl-12 p-3 ">
+              <p class=" text-center text-secondary">Derechos reservados @TravelWorld</p>
+            </div>
+          </div>	
+        
+      </section>
+  </footer>-->
+   
+    
+    <script src="./scripts/main.js"></script>      <!----agregando la carpeta de javascript a mi html-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> <!--script de js bootstrap-->
+
+    <!--<script src="./scripts/prueba.js"></script>-->
+    <!--final del footer-->
+</body>
+</html>
