@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.card{
+    background-color: beige;
+}
+
+img
 /*header*/
 .logo{
     width: 5%;
@@ -61,38 +67,7 @@ a{
     text-decoration: none;    
 }
 
-.destinos {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 1px;
-    }
-    
-    .div1 { grid-area: 1 / 1 / 4 / 3; }
-    .div2 { grid-area: 1 / 3 / 4 / 4; }
-    .div3 { grid-area: 1 / 4 / 4 / 5; }
-    .div4 { grid-area: 1 / 5 / 4 / 7; }
-    .div5 { grid-area: 4 / 1 / 7 / 2; }
-    .div6 { grid-area: 4 / 2 / 7 / 3; }
-    .div7 { grid-area: 4 / 3 / 7 / 5; }
-    .div8 { grid-area: 4 / 5 / 7 / 6; }
-    .div9 { grid-area: 4 / 6 / 7 / 7; }
 
-    .imgDestino{
-        width: 400px;
-        height: 300px;
-        border-radius: 20px;
-        opacity: 1;
-    }
-
-    .imgDestino:hover{
-        opacity: 0.5;
-    }
-
-    .div10{
-        background-color: gray;
-    }
 /*footer*************************************/
 footer{
     
