@@ -1,9 +1,23 @@
-const destinos = [{id: 1, nombre: "Barcelona", precio: 250000 },
-                  {id: 1, nombre: "Barcelona", precio: 250000 },
-                  {id: 1, nombre: "Barcelona", precio: 250000 },
-                  {id: 1, nombre: "Barcelona", precio: 250000 }
+const destinoBarcelona = new viaje ("Barcelona", 20 , 250000, 1 );
+const destinoBali = new viaje ("Bali", 10 , 315000, 2 );
+const destinoBariloche = new viaje ("Bariloche", 60 , 15000, 3 );
+const destinoBrasil = new viaje ("Brasil", 50 , 120000, 4 );
+const destinoMaldivas = new viaje ("Maldivas", 30 , 400000);
+const destinoMexico = new viaje ("Mexico", 40 , 170000);
+const destinoParis = new viaje ("Paris", 20 , 260000);
+const destinoTurquia = new viaje ("Turquia", 15 , 210000); 
+
+
+
+const arrayDestinos = [{id: 1, nombre: "Barcelona", precio: 250000 },
+                       {id: 2, nombre: "Bali", precio: 315000 },
+                       {id: 3, nombre: "Bariloche", precio: 15000 },
+                       {id: 4, nombre: "Brasil", precio: 120000}
 ];
 
+
+
+const listaDestinos = [ destinoBarcelona, destinoBali, destinoBariloche, destinoBrasil]
 
 for (const destino of listaDestinos){
  let contenedor = document.createElement("div");
@@ -15,23 +29,14 @@ for (const destino of listaDestinos){
 }
 
 
-const destinoBarcelona = new viaje ("Barcelona", 20 , 250000, 1 );
-const destinoBali = new viaje ("Bali", 10 , 315000, 2 );
-const destinoBariloche = new viaje ("Bariloche", 60 , 15000, 3 );
-const destinoBrasil = new viaje ("Brasil", 50 , 120000, 4 );
-const destinoMaldivas = new viaje ("Maldivas", 30 , 400000);
-const destinoMexico = new viaje ("Mexico", 40 , 170000);
-const destinoParis = new viaje ("Paris", 20 , 260000);
-const destinoTurquia = new viaje ("Turquia", 15 , 210000); 
 
-
-const listaDestinos = [ destinoBarcelona, destinoBali, destinoBariloche, destinoBrasil]
 
 let botonDestinos = document.querySelector('.botonDestinos')
 
 botonDestinos.addEventListener('click', destinos)
 
 let catalgo = document.querySelector('.catalogo')
+
 
 function destinos(){
     
