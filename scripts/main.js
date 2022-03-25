@@ -1,4 +1,39 @@
-const destinoBarcelona = new viaje ("Barcelona", 20 , 250000, 1 );
+const viajes = [
+    { nombre: "Barcelona", precio: 250000, stock: 20, src: './img/barcelona.jpg'},
+    { nombre: "Bali", precio: 315000, stock: 10, src: './img/baliIndonesia.jpg'}, 
+    { nombre: "Bariloche", precio: 15000, stock: 60, src: './img/bariloche.jpg'},
+    { nombre: "Brasil", precio: 120000, stock: 50, src: './img/brasil.jpg'},
+    { nombre: "Maldivas", precio: 400000, stock: 30, src: './img/maldivas.jpg'},
+    { nombre: "Mexico", precio: 170000, stock: 40, src: './img/mexico2.jpg'},
+    { nombre: "Paris", precio: 260000, stock: 20, src: './img/paris.jpg'},
+    { nombre: "Turquia", precio: 210000, stock: 15, src: './img/turquia.jpg'},
+]
+
+const viajesContainer = document.getElementById('viajesContainer');
+
+console.log(viajesContainer);
+
+for (const destino of viajes){
+
+    const viajesCardContainer = document.createElement('div');
+
+    viajesCardContainer.classList.add ('col-3','mt-3','d-flex','justify-content-center');
+
+    viajesCardContainer.innerHTML = `<div class="card shadow" style="width: 25rem">
+                                 <img src=${destino.src} class="card-img-top viajesImg" alt=${destino.nombre}>
+                                    <div class="card-body">
+                                      <h5 class="card-title">${destino.nombre}</h5>
+                                      <p class="card-stock">Disponible: ${destino.stock}</p>
+                                      <p class="card-text">Precio: $${destino.precio}</p>
+                                      <a class="btn btn-primary viajeBtn" id=${viajes.nombre}>Comprar</a>
+                                    </div>
+                                </div>`;
+
+  viajesContainer.appendChild(viajesCardContainer);                              
+}
+
+
+/*const destinoBarcelona = new viaje ("Barcelona", 20 , 250000, 1 );
 const destinoBali = new viaje ("Bali", 10 , 315000, 2 );
 const destinoBariloche = new viaje ("Bariloche", 60 , 15000, 3 );
 const destinoBrasil = new viaje ("Brasil", 50 , 120000, 4 );
@@ -7,6 +42,7 @@ const destinoMexico = new viaje ("Mexico", 40 , 170000);
 const destinoParis = new viaje ("Paris", 20 , 260000);
 const destinoTurquia = new viaje ("Turquia", 15 , 210000); 
 
+justify-content-center
 
 
 const arrayDestinos = [{id: 1, nombre: "Barcelona", precio: 250000 },
@@ -48,9 +84,45 @@ function destinos(){
                             <b> Precio:$ ${destino.precio}<b>`;
     catalogo.appendChild(contenedor);
     }
+}*/
+
+
+
+
+let boton1 = document.querySelector('.boton1')
+
+boton1.addEventListener('click', saludar)
+
+function saludar(){
+    Swal.fire({
+        title: 'Bienvenido!',
+        Text: 'Espero que te guste nuestra pagina',
+        icon:'info',//se puede agregar una imagen al icon
+        confirmButtonText: 'Ingresar',
+        timer: 1500,
+    })
 }
 
+let botonToastify = document.querySelector('.botonToastify')
 
+botonToastify.addEventListener('click', carritoToatify)
+
+function carritoToatify(){
+    Toastify({
+        text: "This is a toast",
+        duration: 3000,
+        destination: "https://github.com/apvarun/toastify-js",
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "left", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, #00b09b, #96c93d)",
+        },
+        onClick: function(){} // Callback after click
+      }).showToast();
+}
 
 /*let categoriaDestino = prompt ()
 for (const destino of destinos){
@@ -85,7 +157,7 @@ const carrito = [];
     alert('Bienvenido a travel world '+ nombreUsuario);
 }*/
 
-let nombre=prompt("Ingrese su nombre: ");
+/*let nombre=prompt("Ingrese su nombre: ");
 
 saludo(nombre);
 
@@ -146,7 +218,7 @@ function variosDestinos(){
 listadoDestinos();
 variosDestinos();
 
-console.log(carrito);
+console.log(carrito);*/
 
 
 

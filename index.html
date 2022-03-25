@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"><!--Asignando Bootstrap-->
     <link href="estilos.css" rel="stylesheet"><!--stylo css-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet"><!--estilo de titulo-->
+
     <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
     <title>Travel world</title>
 </head>
@@ -53,17 +55,23 @@
     </header>
     <!--final del header-->
     <!--Comienzo del main-->
-    <main>
-      <div class="catalogo"></div>
+    <main id="viajesContainer" class="row mt-3"></main>
+
+    <div id="visualCard" class="row"></div>
+    
+    <!--<div class="catalogo"></div>
 
       <button class = "botonDestinos"> Destinos </button>
       <button class ="botonHoteles"> Hoteles </button>
+      <button class="boton1">Saludo</button>
+      <button class="botonToastify">Tu producto fue agregado</button>-->
       
+
    
 
     
 
-    </main>
+
 
     <!--final del main-->
     <!--Comienzo del footer-->
@@ -152,9 +160,10 @@
       </section>
   </footer>-->
    
-    
-    <script src="./scripts/main.js"></script>      <!----agregando la carpeta de javascript a mi html-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script><!--sweet alert biblioteca siempre poner las librerias por encima de nuestro archivo de js-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script><!--Biblioteca de toastify-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> <!--script de js bootstrap-->
+    <script src="./scripts/main.js"></script>      <!----agregando la carpeta de javascript a mi html-->
 
     <!--<script src="./scripts/prueba.js"></script>-->
     <!--final del footer-->
