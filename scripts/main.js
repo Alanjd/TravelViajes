@@ -56,7 +56,7 @@ for (const destino of viajes){
                                       <h5 class="card-title">${destino.nombre}</h5>
                                       <p class="card-stock">Disponible: ${destino.stock}</p>
                                       <p class="card-text">Precio: $${destino.precio}</p>
-                                      <a class="btn btn-primary viajeBtn" id=${viajes.nombre}>Comprar</a>
+                                      <a class="btn btn-primary destinoBtn" id=${destino.nombre}>Comprar</a>
                                     </div>
                                 </div>`;
 
@@ -65,10 +65,73 @@ for (const destino of viajes){
 
 
 
+const carrito =[]
 
-const viajesBtn = document.getElementsByClassName('viajeBtn');
+const viajesBtn = document.getElementsByClassName('destinoBtn');
+
+//console.log(viajesBtn);
 
 
+//funcion pasa una id y busca en el array destino, nos devuelve un elemento
+function findAndAddDestino(id) {
+    
+    const destino = viajes.find (destino => destino.nombre === id);
+
+    //console.log(destino);
+
+    carrito.push(destino);
+
+    //console.log(carrito);
+
+}
+
+
+
+//iterar la coleccion de elementos
+for (const destinoBtn of viajesBtn) {
+    
+    destinoBtn.addEventListener('click', (e) => { //agregando a cada boton un elemento
+           //console.log ('click');//Prueba de funcionamiento del boton click
+
+           //console.log(e.target); //lugar donde ocurre el evento
+           
+           const destinoId = e.target.id;// id de cada evento qye se genera
+
+           //console.log(destinoId);
+
+           findAndAddDestino(destinoId);
+
+           renderCart();
+        });
+
+}
+
+
+//
+
+const cartBtn = document.getElementById('cartBtn');
+
+const visualCarrito = document.getElementById ('visualCarrito');
+
+cartBtn.addEventListener('click', () => {
+
+    console.log (visualCarrito.style.bottom);
+
+    if (visualCarrito.style.bottom === '-300px'|| visualCarrito.style.bottom === ''){
+        visualCarrito.style.bottom = 0;
+    }
+    else {
+        visualCarrito.style.bottom = '-300px';
+    }
+});
+
+
+
+
+
+
+
+/*
 for (const viajeBtn of viajesBtn) {
     viajeBtn.addEventListener('click', (e) => {
         
