@@ -1,3 +1,34 @@
+/*Comienzo de carousel
+const slider = document.querySelector('.gallery');
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slider.addEventListener('mousedown', e => {
+  isDown = true;
+  slider.classList.add('active');
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+slider.addEventListener('mouseleave', _ => {
+  isDown = false;
+  slider.classList.remove('active');
+});
+slider.addEventListener('mouseup', _ => {
+  isDown = false;
+  slider.classList.remove('active');
+});
+slider.addEventListener('mousemove', e => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const SCROLL_SPEED = 3;
+  const walk = (x - startX) * SCROLL_SPEED;
+  slider.scrollLeft = scrollLeft - walk;
+});
+
+Fin de carousel */
+
 const viajes = [
     { nombre: "Barcelona", precio: 250000, stock: 20, src: './img/barcelona.jpg'},
     { nombre: "Bali", precio: 315000, stock: 10, src: './img/baliIndonesia.jpg'}, 
@@ -32,6 +63,31 @@ for (const destino of viajes){
   viajesContainer.appendChild(viajesCardContainer);                              
 }
 
+
+
+
+const viajesBtn = document.getElementsByClassName('viajeBtn');
+
+
+for (const viajeBtn of viajesBtn) {
+    viajeBtn.addEventListener('click', (e) => {
+        
+        //console.log ('click'); Prueba de funcionamiento del boton
+        const viajesId = e.target.id;
+
+        findAndAddCoin(viajesId);
+    })
+}
+
+function findAndAddCoin (id){
+    const destino = viajes.find (destino => destino.nombre === id);
+
+    console.log(destino);
+
+    card.push(destino);
+
+    console.log(card);
+}
 
 /*const destinoBarcelona = new viaje ("Barcelona", 20 , 250000, 1 );
 const destinoBali = new viaje ("Bali", 10 , 315000, 2 );
@@ -89,7 +145,7 @@ function destinos(){
 
 
 
-let boton1 = document.querySelector('.boton1')
+let boton1 = document.querySelector('')
 
 boton1.addEventListener('click', saludar)
 
