@@ -1,0 +1,74 @@
+[
+    {
+        "nombre":"Barcelona",
+        "precio":250000,
+        "stock":20,
+        "categoria":"Cuidad",
+        "id": 1,
+        "img":"./img/barcelona.jpg"
+
+    },
+    {
+        "nombre":"Bali",
+        "precio": 315000,
+        "stock": 10,
+        "categoria":"Playa",
+        "id": 2,
+        "img":"./img/baliIndonesia.jpg"
+
+    },
+    {
+        "nombre":"Bariloche",
+        "precio": 15000,
+        "stock": 60,
+        "categoria":"Montaña",
+        "id": 3,
+        "img":"./img/bariloche.jpg"
+
+    },
+    {
+        "nombre":"Brasil",
+        "precio": 120000,
+        "stock":50,
+        "categoria":"Playa",
+        "id":4,
+        "img":"./img/brasil.jpg"
+
+    },
+    {
+        "nombre":"Maldivas",
+        "precio": 400000,
+        "stock": 30,
+        "categoria":"Playa",
+        "id": 5,
+        "img":"./img/maldivas.jpg"
+
+    },
+    {
+        "nombre":"Mexico",
+        "precio": 170000,
+        "stock": 40,
+        "categoria":"Playa",
+        "id": 6,
+        "img":"./img/mexico2.jpg"
+
+    },
+    {
+        "nombre":"Paris",
+        "precio": 260000,
+        "stock": 20,
+        "categoria":"Cuidad",
+        "id": 7,
+        "img":"./img/paris,jpg"
+
+    },
+    {
+        "nombre":"Turquia",
+        "precio": 210000,
+        "stock": 15,
+        "categoria":"Cuidad",
+        "id": 8,
+        "img":"./img/turquia.jpg"
+
+    },
+]

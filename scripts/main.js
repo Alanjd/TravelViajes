@@ -1,3 +1,5 @@
+import Toastify from 'toastify-js'
+
 /*Comienzo de carousel
 const slider = document.querySelector('.gallery');
 let isDown = false;
@@ -28,6 +30,13 @@ slider.addEventListener('mousemove', e => {
 });
 
 Fin de carousel */
+let listaProductos = []
+
+fetch ('data.json')
+.then((resp) => resp.json())
+.then((data) => listaProductos =data )
+
+
 
 const viajes = [
     { nombre: "Barcelona", precio: 250000, stock: 20, src: './img/barcelona.jpg'},

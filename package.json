@@ -1,0 +1,22 @@
+{
+  "name": "travel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001bmain",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alanjd/TravelViajes.git"
+  },
+  "author": "Alan Jaime",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alanjd/TravelViajes/issues"
+  },
+  "homepage": "https://github.com/Alanjd/TravelViajes#readme",
+  "dependencies": {
+    "toastify-js": "^1.11.2"
+  }
+}
